@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的 GitHub 個人網頁 (jQuery 範例)</title>
+    <!-- 引入 jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        // 點擊按鈕時觸發 jQuery 隱藏段落效果
+        $("button").click(function(){
+            $("p").hide();
+        });
+    });
+    </script>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>歡迎來到我的 GitHub 個人網頁</h1>
+    <p>這是一段示範文字 1。</p>
+    <p>這是一段示範文字 2。</p>
+
+    <button>點擊隱藏段落 (jQuery)</button>
+
+</body>
+</html>
